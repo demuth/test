@@ -10,6 +10,9 @@ def fgreen(event):
 def fred(event):
     w.create_rectangle(100,100,200,200, fill = "red")
     
+def fredtone(event):
+	winsound.Beep(275, 1000)
+    
 def forange(event):
     w.create_rectangle(100,100,200,200, fill = "orange")
 
@@ -29,7 +32,8 @@ w = Canvas(master, width = 200, height = 200)
 
 #click in canvas and then use keyboard to color the fourth square
 w.bind("<g>", fgreen)
-w.bind("<r>", fred)
+w.bind("<r>", fred, add="+")
+w.bind("<r>", fredtone, add="+")
 w.bind("<o>", forange)
 w.bind("<y>", fyellow)
 w.bind("<b>", fblue)
