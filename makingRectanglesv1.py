@@ -12,6 +12,8 @@ w.pack()
 
 
 while (i<k):
+    if righty>=600:#if the first column of rectangles goes lower than y=600
+        leftx=leftx+250; rightx=rightx+250; lefty=25; righty=75#this starts a new column of rectangles
     w.create_rectangle(leftx, lefty, rightx, righty)
     lefty=lefty+50; righty=righty+50
     i=i+1
