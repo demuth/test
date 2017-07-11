@@ -1,7 +1,7 @@
 import mysql.connector
 import datetime
 
-cnx = mysql.connector.connect(user="dune", password="rhoades303", host="127.0.0.1", database="dune")
+cnx = mysql.connector.connect(user="dune", password="CENSORED", host="127.0.0.1", database="dune")
 
 cursor = cnx.cursor()
 
